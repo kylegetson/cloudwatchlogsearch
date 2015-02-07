@@ -1,5 +1,5 @@
 # Cloud Watch Log Search
-Cloud watch log search tool. Currently only does tailing, and tailing with regex (tailserach). If you use JSON formatted logs, make sure you set the logformat, and select fields to display for a table view.
+Cloud watch log search tool. Currently only does tailing, and tailing with regex (tailserach). If you use JSON formatted logs, make sure you set the logformat, and select fields to display for a table view. Unless startTime is defined, tailing defaults to 60 seconds ago.
 
 **Required**
 
