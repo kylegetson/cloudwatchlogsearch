@@ -15,6 +15,9 @@ Cloud watch log search tool. Currently only does tailing, and tailing with regex
 #### Example 
 ```./bin/logsearch --action=tail --logFormat json --fields hostname,audit.res.latency,audit.res.statusCode  --logGroupName MyLog/GroupName --logStreamName myStreamName```
 
+![alt text](https://github.com/kylegetson/cloudwatchlogsearch/raw/master/images/output.png "Example output")
+
+
 To run this, you must set up an AWS credentials file with your secret key and secret access key. Create a file located at ```~/.aws/credentials``` 
 
 ```
