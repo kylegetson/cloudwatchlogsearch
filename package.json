@@ -1,0 +1,21 @@
+{
+  "name": "CloudWatchLogSearch",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kylegetson/cloudwatchlogsearch"
+  },
+  "author": "kylegetson",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "aws-sdk": "^2.1.8",
+    "cli-table": "^0.3.1",
+    "commander": "^2.6.0"
+  }
+}
