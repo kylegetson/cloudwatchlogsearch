@@ -12,6 +12,24 @@ Cloud watch log search tool. Currently only does tailing, and tailing with regex
 ### For help
 ```./bin/logsearch -h```
 
+```
+Usage: logsearch [options]
+
+  Options:
+
+    -h, --help                       output usage information
+    -V, --version                    output the version number
+    --logGroupName [logGroupName]    logGroupName
+    --logStreamName [logStreamName]  logStreamName
+    --startTime [startTime]          startTime
+    --region [region]                us-east-1
+    --action [actionName]            What to do: [tail, search, tailsearch]
+    --logFormat [type]               string|json
+    --limit [10000]                  size of results to get per request, 10,000 max
+    --fields <list>                  username,timestamp,notes
+    --regex [regex]                  only needed if doing tailsearch example value [a][0-9]
+```
+
 #### Example 
 ```./bin/logsearch --action=tail --logFormat json --fields hostname,audit.res.latency,audit.res.statusCode  --logGroupName MyLog/GroupName --logStreamName myStreamName```
 
