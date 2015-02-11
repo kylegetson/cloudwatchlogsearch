@@ -30,11 +30,13 @@ Usage: logsearch [options]
     --regex [regex]                  only needed if doing tailsearch example value [a][0-9]
 ```
 
-#### Example 
+#### Examples
 ```./bin/logsearch --action=tail --logFormat json --fields hostname,audit.res.latency,audit.res.statusCode  --logGroupName MyLog/GroupName --logStreamName myStreamName```
 
 ![alt text](https://github.com/kylegetson/cloudwatchlogsearch/raw/master/images/output.png "Example output")
 
+###### View what users did with cloudtrail and regex
+```./bin/logsearch --action=tailsearch  --logGroupName CloudTrail/DefaultLogGroup --logStreamName 2527320738_CloudTrail_us-east-1  --logFormat json --fields eventName,sourceIPAddress,eventType,userAgent  --startTime 2015-02-02 --regex [MyUserName] ```
 
 To run this, you must set up an AWS credentials file with your secret key and secret access key. Create a file located at ```~/.aws/credentials``` 
 
